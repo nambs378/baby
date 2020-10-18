@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    >
+
+    <ImageView
+        android:id="@+id/item_dot"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/dot"
+        android:layout_margin="10dp"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/zxc"
+        android:layout_toRightOf="@+id/item_dot"
+        android:orientation="vertical"
+        tools:ignore="UnknownId">
+
+        <TextView
+            android:id="@+id/item_nameRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_childName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huy"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_goCD"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginRight="2dp"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/clock"
+            android:layout_marginRight="3pt"
+            android:layout_marginLeft="3pt"
+            />
+
+        <TextView
+            android:id="@+id/item_home_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00:21 min"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

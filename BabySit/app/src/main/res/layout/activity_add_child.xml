@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AddChildActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/Cyan">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+        <ImageView
+            android:id="@+id/add_child_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textSize="10pt"
+            android:src="@mipmap/back"
+            android:textColor="@color/white"
+            android:layout_gravity="left"
+            android:layout_marginRight="5pt"
+            />
+
+        <TextView
+            android:id="@+id/add_child_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textSize="10pt"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginRight="5pt"
+
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="35dp"
+        android:textSize="18dp"
+        android:text="Add photo"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/addchild_photo"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="#00FFFFFF"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#D6D6D6"/>
+
+    <ImageView
+        android:id="@+id/passenger_iv_add"
+        android:src="@mipmap/add"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="132dp"
+        android:layout_width="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/zxczxczz"
+        android:layout_below="@+id/addchild_photo"
+        android:layout_width="wrap_content"
+        android:text="Child name"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/passenger_et_namechild"
+        android:layout_below="@+id/zxczxczz"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/passenger_bt_delete"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/passenger_et_namechild"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"/>
+
+
+    <ImageView
+        android:id="@+id/passenger_bt_finish"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/add"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>

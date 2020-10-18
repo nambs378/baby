@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.DetailRouteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/Cyan">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Routes"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+        <TextView
+            android:id="@+id/detail_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="10pt"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginRight="5pt"
+
+            />
+        <TextView
+            android:id="@+id/detail_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="10pt"
+            android:textColor="@color/white"
+            android:layout_gravity="left"
+            android:layout_marginRight="5pt"
+
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/loca"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/location"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/detail_etName"
+                        android:layout_toRightOf="@+id/loca"
+                        android:layout_width="match_parent"
+                        android:hint="Route name"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_toLeftOf="@+id/detail_setIcon"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        android:id="@+id/detail_setIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Set Icon"
+                        android:textSize="17dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentEnd="true"/>
+
+                    <ImageView
+                        android:id="@+id/detail_iv_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentEnd="true"
+                        />
+
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/detail_recy_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+                <LinearLayout
+                    android:id="@+id/detail_add_child"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@mipmap/add"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/Cyan"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20dp"
+                        android:text="Add Child"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:background="@color/Cyan"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Set your alarm time"
+                        android:textSize="22dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/zvvv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="10dp"
+
+                            android:weightSum="2">
+
+                            <Button
+                                android:id="@+id/detail_change_listtime"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Quick times"
+                                android:textAllCaps="false"
+                                android:textColor="#ADADAD"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/white"
+                                android:layout_height="45dp" />
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:textColor="#ADADAD"
+                                android:id="@+id/detail_change_timepick"
+
+                                android:text="Manual"
+                                android:textAllCaps="false"
+                                android:layout_height="45dp" />
+
+                        </LinearLayout>
+
+                        <fragment
+                            android:layout_below="@+id/zvvv"
+                            android:id="@+id/listTimeFragment"
+                            class="com.example.babysit.Fragment.ListTimeFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            tools:layout="@layout/fragment_listtime">
+
+                        </fragment>
+
+                        <fragment
+                            android:layout_below="@+id/zvvv"
+
+                            android:id="@+id/timepickFragment"
+                            class="com.example.babysit.Fragment.TimePickerFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            tools:layout="@layout/fragment_timepicker">
+
+                        </fragment>
+
+                        <ImageView
+                            android:id="@+id/detail_start"
+                            android:layout_marginTop="275dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/play"
+                            android:layout_centerHorizontal="true"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

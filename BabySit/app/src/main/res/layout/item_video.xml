@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/gegeg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black">
+        <ImageView
+            android:id="@+id/item_video_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:alpha="0.7"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/invideo"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/item_video_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="namesong"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/gegeg"
+        android:textSize="19dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/item_video_check"
+        android:layout_width="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/uncheck"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

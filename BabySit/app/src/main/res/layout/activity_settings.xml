@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/yellow">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+        <ImageView
+            android:id="@+id/settings_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="10pt"
+            android:src="@mipmap/back"
+            android:textColor="@color/white"
+            android:layout_gravity="left"
+            android:layout_marginRight="5pt"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibrate"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <Switch
+                android:id="@+id/settings_switch"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:theme="@style/SCBSwitch"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volume"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:id="@+id/xxx"
+                android:layout_marginTop="25dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/volume"/>
+
+
+            <SeekBar
+                android:id="@+id/settings_seekbar_audio"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/xxx"
+                android:thumbTint="@color/yellow"
+                android:layout_marginLeft="10dp"
+                android:layout_height="28dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_openRecord_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Record your own alarm"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/settings_record"
+                android:layout_width="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="35dp"
+                android:src="@mipmap/record"
+                android:theme="@style/SCBSwitch"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_goVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Record your own video alarm"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/settings_video_alarm"
+                android:layout_width="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="35dp"
+                android:src="@mipmap/record"
+                android:theme="@style/SCBSwitch"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_goSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/yyyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm selection"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_below="@+id/yyyy"
+                android:id="@+id/settings_name_sound_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senorita"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="35dp"
+                android:src="@mipmap/more"
+                android:theme="@style/SCBSwitch"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_goPassenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Passenger manager"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="35dp"
+                android:src="@mipmap/more"
+                android:theme="@style/SCBSwitch"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

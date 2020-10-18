@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alarm_gradient"
+    tools:context=".View.AlarmActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/czczx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/alarm_nameroute"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active Route: "/>
+
+        <TextView
+            android:id="@+id/vvvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/alarm_nameroute"
+            android:text="Don't forge the baby!"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/alarm_rv"
+            android:layout_below="@+id/vvvv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/czczx"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@drawable/alarm_circle"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@drawable/alarm_circle"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@drawable/alarm_circle"/>
+
+        <ImageView
+            android:id="@+id/alarm_circle_opacity"
+            android:layout_centerInParent="true"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@drawable/alarm_circle_opecity"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@mipmap/baby1"
+            android:background="@drawable/alarm_circle_opecity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time is up!"
+
+            android:layout_marginTop="100dp"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/cd_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:text="00:00:00"
+            android:layout_marginTop="150dp"
+            android:textColor="@color/Cyan"
+            />
+
+        <TextView
+            android:layout_below="@+id/cd_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="22dp"
+            android:text="Hr Min Sec"
+            android:textColor="@color/Cyan"
+            />
+
+    </RelativeLayout>
+
+
+    <in.shadowfax.proswipebutton.ProSwipeButton
+        android:id="@+id/awesome_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:bg_color="@color/Cyan"
+        app:btn_text="Place Order" />
+
+
+    <VideoView
+        android:id="@+id/alarm_videoview"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginBottom="80dp"/>
+
+</RelativeLayout>

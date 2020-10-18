@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".View.RecordVoiceActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/yellow">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record voice"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+        <ImageView
+            android:id="@+id/record_audio_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="10pt"
+            android:src="@mipmap/back"
+            android:textColor="@color/white"
+            android:layout_gravity="left"
+            android:layout_marginRight="5pt"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/zxczxcz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Record Audio"/>
+
+    <EditText
+        android:id="@+id/record_audio_et_name"
+        android:layout_below="@+id/zxczxcz"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Enter name record"/>
+
+    <RelativeLayout
+        android:id="@+id/zqweqwe"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/record_audio_et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/record_audio_bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record"
+            />
+
+        <Button
+            android:id="@+id/record_audio_bt_stop"
+            android:layout_toRightOf="@+id/record_audio_bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Stop"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/record_audio_rv"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/zqweqwe"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

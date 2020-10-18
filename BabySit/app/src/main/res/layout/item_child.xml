@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:layout_marginBottom="1.5dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/child"
+        android:layout_marginLeft="10dp"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/item_child_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name baby"
+        android:layout_toRightOf="@+id/profile_image"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/item_child_check"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/item_child_check"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/uncheck"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:id="@+id/item_child_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:layout_alignParentEnd="true"
+        android:textColor="#FF0000"
+        android:background="#FFFFFF"
+        android:layout_marginRight="15dp"
+        />
+    
+</RelativeLayout>
